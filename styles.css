@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    height: 40px;
+}
+
+.logo img {
+    height: 100px;
+    width: 180px;
+
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background-image: url('Bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: right;
+    padding-right: 80PX;
+    font-size:xx-large;
+    
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+/* Style for the fixed search container */
+#searchContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000; /* Ensure the search container is above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Update the width of the search input */
+#searchInput {
+    width: calc(100% - 120px); /* Adjust the width as needed */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 16px; /* Adjust font size */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Adjust button styles */
+#searchForm button {
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px; /* Adjust font size */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Button hover effect */
+#searchForm button:hover {
+    background-color: #0056b3; /* Darker shade of button color on hover */
+}
+
+
+
+.search-container input[type="text"],
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.meal-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.meal-item {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light black background */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222; /* Darker black footer */
+}
